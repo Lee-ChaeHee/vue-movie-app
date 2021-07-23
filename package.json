@@ -8,8 +8,10 @@
     "last 2 versions"
   ],
   "scripts": {
-    "dev": "webpack-dev-server --mode development",
-    "build": "webpack --mode production"
+    "dev:webpack": "webpack-dev-server --mode development",
+    "dev": "netlify dev",
+    "build": "webpack --mode production",
+    "lint": "eslint --fix --ext .js,.vue"
   },
   "keywords": [],
   "author": "",
@@ -24,10 +26,12 @@
     "babel-loader": "^8.2.2",
     "copy-webpack-plugin": "^9.0.1",
     "css-loader": "^6.0.0",
+    "dotenv-webpack": "^7.0.3",
     "eslint": "^7.30.0",
     "eslint-plugin-vue": "^7.13.0",
     "file-loader": "^6.2.0",
     "html-webpack-plugin": "^5.3.2",
+    "netlify-cli": "^5.2.2",
     "postcss": "^8.3.5",
     "postcss-loader": "^6.1.1",
     "sass": "^1.35.2",
